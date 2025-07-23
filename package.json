@@ -2,11 +2,13 @@
   "name": "rsvp-wedding",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jayveediaz.github.io/Ever-After-Scroll",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "npm run build && npx gh-pages -d out"
   },
   "dependencies": {
     "react": "19.1.0",
@@ -19,6 +21,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "tailwindcss": "^4",
+    "gh-pages": "^6.3.0"
   }
 }
